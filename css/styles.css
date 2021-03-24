@@ -8,7 +8,7 @@
 
 body {
     background: #bb342f;
-    color: #444148;
+    color: #3b3b3b;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -18,15 +18,55 @@ body {
     font-size: 2rem;
 }
 
-h1,
-h5 {
-    font-weight: 100;
+.home-content {
+    background-color: #fdfdfd;
+    height: 100vh;
+    width: 100%;
+    padding: 6rem 3rem;
+    margin: auto;
 }
 
-section {
-    background: #fdfdfd;
-    padding: 6rem 3rem;
-    margin: 0;
+h1,
+h5 {
+    font-weight: 400;
+}
+
+.center-content {
+    width: 95%;
+    margin: auto;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.home-blocks {
+    display: inline-block;
+}
+
+.social-media {
+    width: 40px;
+    height: 210px;
+    padding-top: 30px;
+    display: none;
+}
+
+.circle {
+    border: 3px solid #3b3b3b;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 30px 0px;
+}
+
+.circle:hover {
+    background-color: #bb342f;
+    border: 3px solid #bb342f;
+    transition: all 0.5s ease;
+    background-position: left bottom;
+}
+
+#about {
+    background-color: #3b3b3b;
+    height: 500px;
 }
 
 #hamburger {
@@ -37,8 +77,8 @@ section {
 }
 
 .line {
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 3.5px;
     background: #3b3b3b;
     margin-bottom: 5px;
 }
@@ -57,8 +97,10 @@ section {
     margin-top: 180px;
 }
 
-.menu-item {
+.menu-item a {
     color: #fdfdfd;
+    text-decoration: none;
+    font-size: 22px;
     width: 100%;
     padding: 1rem 3rem;
     box-sizing: border-box;
@@ -67,4 +109,10 @@ section {
 .menu-item:hover {
     background: #444148;
     cursor: pointer;
+}
+
+@media (min-width:1080px) {
+    .social-media {
+        display: inline-block;
+    }
 }
