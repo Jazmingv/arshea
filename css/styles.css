@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
 }
 
 body {
@@ -28,13 +28,20 @@ body {
 
 h1,
 h5 {
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 25vh;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .center-content {
     width: 95%;
     margin: auto;
-    padding-top: 15%;
     text-align: center;
 }
 
@@ -45,7 +52,7 @@ h5 {
 .social-media {
     width: 40px;
     height: 210px;
-    padding-top: 30px;
+    padding-top: 70px;
     display: none;
 }
 
@@ -64,13 +71,20 @@ h5 {
     background-position: left bottom;
 }
 
+.circle img {
+    width: 100%;
+    height: 100%;
+    padding-top: -6px;
+    padding-left: -10px;
+}
+
 #about {
     background-color: #3b3b3b;
     height: 500px;
 }
 
 #hamburger {
-    position: absolute;
+    position: fixed;
     margin: 50px;
     z-index: 2;
     cursor: pointer;
