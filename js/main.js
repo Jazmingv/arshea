@@ -22,7 +22,7 @@ function openMenu() {
 function closeMenu() {
     menu.style.left = "-320px";
     for (i = 0; i < line.length; i++) {
-        line[i].style.backgroundColor = "#3b3b3b";
+        line[i].style.backgroundColor = "#5f8e98";
     }
     menuOpen = false;
 }

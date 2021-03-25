@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,36 +7,59 @@
 }
 
 body {
-    background: #bb342f;
+    background: #fdfdfd;
     color: #3b3b3b;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Helvetica Neue';
-    font-weight: 100;
-    font-size: 2rem;
+}
+
+.inkpour {
+    fill: #fdfdfd;
+    margin-top: -5%;
 }
 
 .home-content {
-    background-color: #fdfdfd;
-    height: 100vh;
+    background-image: url("../images/background-vangogh.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 700px;
     width: 100%;
-    padding: 6rem 3rem;
     margin: auto;
+    padding: 6rem 3rem;
 }
 
 h1,
-h5 {
-    font-family: 'Lato', sans-serif;
+h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 25vh;
+h3 {
+    font-size: 5vw;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.home-content h1,
+.home-content h5 {
+    color: #fdfdfd;
+}
+
+.home-content h1 {
+    font-size: 172px;
+    letter-spacing: 30px;
+}
+
+.home-content h5 {
+    font-size: 2rem;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .center-content {
@@ -53,34 +76,39 @@ p {
     width: 40px;
     height: 210px;
     padding-top: 70px;
-    display: none;
+    display: inline-block;
 }
 
 .circle {
-    border: 3px solid #3b3b3b;
+    border: 3px solid #fdfdfd;
     border-radius: 50%;
     height: 40px;
     width: 40px;
     margin: 30px 0px;
 }
 
+.ssmm-1 {
+    fill: #fdfdfd;
+}
+
 .circle:hover {
-    background-color: #bb342f;
-    border: 3px solid #bb342f;
+    background-color: #5f8e98;
+    border: 3px solid #5f8e98;
     transition: all 0.5s ease;
     background-position: left bottom;
 }
 
-.circle img {
-    width: 100%;
-    height: 100%;
-    padding-top: -6px;
-    padding-left: -10px;
+.circle:hover svg {
+    fill: #fdfdfd;
+    transition: all 0.5s ease;
 }
 
 #about {
-    background-color: #3b3b3b;
+    background-color: #fdfdfd;
     height: 500px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 #hamburger {
@@ -93,18 +121,19 @@ p {
 .line {
     width: 40px;
     height: 3.5px;
-    background: #3b3b3b;
+    background: #5f8e98;
     margin-bottom: 5px;
 }
 
 #menu {
     width: 320px;
     height: 100%;
-    background: #3b3b3b;
+    background: #5f8e98;
     position: fixed;
     top: 0;
     left: -320px;
     transition: left .1s;
+    padding: 2rem 3rem;
 }
 
 .menu-item:first-child {
@@ -114,19 +143,48 @@ p {
 .menu-item a {
     color: #fdfdfd;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
     font-size: 22px;
+    line-height: 36px;
     width: 100%;
-    padding: 1rem 3rem;
     box-sizing: border-box;
 }
 
 .menu-item:hover {
-    background: #444148;
     cursor: pointer;
 }
 
-@media (min-width:1080px) {
+@media (max-width:1080px) {
     .social-media {
-        display: inline-block;
+        display: none;
+    }
+    .center-content {
+        width: 100%;
+    }
+}
+
+@media (max-width:960px) {
+    h1 {
+        font-size: 15vw;
+        letter-spacing: normal;
+    }
+    h5 {
+        font-size: 3vw;
+    }
+    .home-content h5 {
+        margin-left: -25%;
+    }
+    .home-content {
+        height: 130%;
+    }
+}
+
+@media (max-width:768px) {
+    #hamburger {
+        margin: 5%;
+    }
+    .line {
+        width: 25px;
+        height: 2.25px;
     }
 }
